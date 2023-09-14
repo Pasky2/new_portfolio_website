@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --text-color: rgb(134,142,150);
+    --border-color: rgb(52,58,64) ;
+    --background-color: rgb(33,37,41);
+    --hover-color:rgb(131, 134, 138);
+}
+* {
+    text-decoration: none;
+}
+body{
+    background: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+}
+ 
+.navbar-toggler-icon{
+    color: #fff;
+    border: none;
+}
+.navbar-brand {
+    border: 1px solid var(--border-color);
+    padding: 0 10px;
+    border-radius: 0 10px 0 10px;
+}
+
+.btn {
+    background: rgb(52,58,64);
+}
+
+
+.btn:hover {
+    background: var(--hover-color);
+   
+}
+
+
+.nav-link:hover{
+    border-bottom: 1px solid var(--border-color);
+    color: rgb(134,142,150);
+}
+
+.vertical-line {
+    width: .5px;
+    height: 200px;
+    background: var(--border-color);
+}
+
+.about-container {
+    border: 1px solid var(--border-color);
+}
+
+.title {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    width: 140px;
+    font-size: 18px;
+} 
+
+.bio {
+    color: var(--text-color);
+}
+
+.about-row{
+    flex-direction: row-reverse;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.socials a:hover {
+    background: var(--hover-color);
+    color: #fff;
+}
+
+.socials i {
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+.services {
+    border-top: 1px solid var(--border-color);
+    width: 300px;
+}
+
+.card{ 
+    border: none;
+}
+
+.card-container {
+    border: 1px solid var(--border-color);
+}
+
+.card-text {
+    color: var(--text-color);
+}
+
+.card-body i {
+    color: var(--text-color);
+}
+
+#portfolio{
+    margin-top: 200px;
+}
+
+.portfolio {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+hr {
+    color: var(--text-color);
+}
+
+.resume-header {
+    position: sticky;
+    top: 20%;
+}
+
+.progress {
+    height: 10px;
+    background: var(--border-color);
+    margin-top: 0;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, rgb(52,58,64) 20%, rgb(234,235,237)100%);
+}
+
+.text-color {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.progress-row {
+    line-height: 0;
+}
+
+.form-control {
+    background: rgb(52,58,64);
+    color: rgb(173,181,185);
+    outline: 0;
+    border: none;
+}
+
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 1px solid #0077cc; */
+    animation: typing 2s steps(20) ;
+}
+
+@keyframes typing {
+    0% { width: 0;}
+    100% { 
+        width: 100%;
+    }
+}
