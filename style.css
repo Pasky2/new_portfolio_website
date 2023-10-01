@@ -17,6 +17,10 @@ body{
     color: #fff;
     border: none;
 }
+
+.navbar-nav {
+    margin-left: 300px;
+}
 .navbar-brand {
     border: 1px solid var(--border-color);
     padding: 0 10px;
@@ -97,7 +101,7 @@ body{
     border: none;
 }
 
-.card-container {
+.card-container, .skills {
     border: 1px solid var(--border-color);
 }
 
@@ -160,9 +164,20 @@ hr {
     animation: typing 2s steps(20) ;
 }
 
+.form-control::placeholder {
+    color: grey;
+    font-size: 15px;
+}
+
 @keyframes typing {
     0% { width: 0;}
     100% { 
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav {
+        margin-left: 0px;
     }
 }
